@@ -1,0 +1,25 @@
+<h1 [class.red] = "h1Style">
+  Home works!
+</h1>
+
+<p [ngClass] = "{
+  'red' : !h1Style,
+  'large' : h1Style
+}"> dynamic multiple class lodaing</p>
+
+
+<button (click) = "firstClick()">Click Me</button>
+
+<p *ngIf="users">
+
+  <li *ngFor="let user of users">
+    <p> user Id : {{user.id}} </p>
+    <p>
+      user name : {{user.name}}
+    </p>
+    <p>
+      username : {{user.username}}
+    </p>
+  </li>
+
+</p>

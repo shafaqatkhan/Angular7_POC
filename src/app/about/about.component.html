@@ -1,0 +1,18 @@
+<p>
+  about works!
+</p>
+
+<p [style.color]="dynamicStyle ? 'red' : 'green'">
+  Dynamic Single Style
+</p>
+
+<p [ngStyle] = "
+{
+  'color' : dynamicStyle ? 'red' : 'green',
+  'font-size' : dynamicStyle ? '2em' : '3em'
+}
+">
+  Dynamic Muliple style Loading ......
+</p>
+
+<button (click) = "firstClick()"> Click Me </button>
