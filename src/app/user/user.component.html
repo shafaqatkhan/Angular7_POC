@@ -2,7 +2,7 @@
   <h1 class="text-center"> Users Details!</h1>
 
 <div class="text-center">
-<table *ngIf = "users">
+<table *ngIf = "users else loading">
   <tr>
     <th width="5%">User Id</th>
     <th width= "20%">User Name</th>
@@ -14,4 +14,6 @@
     <td>{{user.company.name}}</td>
   </tr>
 </table>
+
+<ng-template #loading> <p class="text-center"> loading..... </p> </ng-template>
 </div>

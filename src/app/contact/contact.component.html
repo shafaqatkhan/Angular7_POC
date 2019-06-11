@@ -6,3 +6,11 @@
 </p>
 
 <button (click) = "display()"> click </button>
+
+<div *ngIf="!textCenter else temp1">
+  <p>Implementing Template</p>
+</div>
+
+<ng-template #temp1> 
+  <h1 class="well">This is Template view </h1>
+</ng-template>

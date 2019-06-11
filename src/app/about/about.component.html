@@ -16,3 +16,10 @@
 </p>
 
 <button (click) = "firstClick()"> Click Me </button>
+
+<ng-container *ngTemplateOutlet="loading">   </ng-container>
+
+<ng-template #loading> 
+ 
+    <h1>  <p>This is Dynamic Template Loading</p> </h1>
+</ng-template>

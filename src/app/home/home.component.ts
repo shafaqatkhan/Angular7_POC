@@ -14,15 +14,16 @@ export class HomeComponent implements OnInit {
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    this.data.getUsers().subscribe(data => {
-      this.users = data;
-      console.log(this.users);
-    });
+
   }
 
   firstClick(){
     console.log("Button click succesfully");
     this.h1Style = true;
     this.data.firstClick();
+    this.data.getUsers().subscribe(data => {
+      this.users = data;
+      console.log(this.users);
+    });
   }
 }
