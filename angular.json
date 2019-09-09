@@ -112,8 +112,17 @@
               "devServerTarget": "Angular7:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/Angular7",
+            "netlifyToken": "b0a1e845bf44cf2584868d27e78a267d58fb092ce298700e932286bca9b1aae3",
+            "siteId": "f73fcba3-705b-4513-a0f1-549a703b9fd4"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Angular7"
 }
